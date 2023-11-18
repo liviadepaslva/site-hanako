@@ -29,9 +29,95 @@ section#start-section {
     background-position: center;
     background-repeat: no-repeat;
     height: 70dvh;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
+
+section#start-section button {
+    position: absolute;
+    bottom: 15%;
+    height: 4rem;
+    width: 12rem;
+}
+/*introduction-break*/
 
 div.section-break {
     height: 12dvh;
     background-color: rgb(255, 145, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.section-break span {
+    font-size: 1.5rem;
+}
+
+/*---------------------sections*/
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+section > div.display {
+    --space-between: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: var(--space-between);
+}
+
+section > div.display > a {
+    position: relative;
+}
+
+section > div.display > a div {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 248, 220, 0);
+    transition: .3s;
+
+    &:hover {
+        background-color: rgba(255, 248, 220, .7);
+    }
+}
+
+section > div.display > a div span {
+    font-size: 1.3rem;
+    opacity: 0;
+    transition: .3s;
+}
+
+section > div.display > a:hover div span {
+    opacity: 1;
+}
+
+section > div.display img {
+    height: 27vmin;
+}
+
+section > div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*topodesecoes*/
+
+div.section-top {
+    width: 100%;
+}
+
+div.section-top hr {
+    height: 5px;
+    background-color: black;
+    margin-bottom: 20px;
 }

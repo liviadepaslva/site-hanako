@@ -1,10 +1,10 @@
 :root {
-    --menu-width: 300px;
+    --menu-width: 350px;
 }
 
 
 .menu-hamburger {
-    --_size: 2.2rem;
+    --_size: 2.5rem;
     height: var(--_size);
     width: var(--_size);
     display: flex;
@@ -14,11 +14,10 @@
     cursor: pointer;
     transition: left .25s;
     position: fixed;
-    left: 1rem;
-    bottom: 1rem;
-    z-index: 3;
-
+    left: 2rem;
+    bottom: 2rem;
     border: 2px rgb(17, 2, 2) solid;
+    z-index: 11;
 }
 
 .open-nav .menu-hamburger {
@@ -65,6 +64,7 @@
     flex-direction: column;
     gap: .5rem;
     overflow: auto;
+    z-index: 10;
 }
 
 .main-menu a {
