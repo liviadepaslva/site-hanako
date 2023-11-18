@@ -1,0 +1,37 @@
+@import url(menu-hamburguer.css);
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 18dvh;
+}
+
+section#start-section {
+    background-color: rgb(101, 188, 188);
+    background-image: url(../imgs/mangacover-main.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70dvh;
+}
+
+div.section-break {
+    height: 12dvh;
+    background-color: rgb(255, 145, 0);
+}
