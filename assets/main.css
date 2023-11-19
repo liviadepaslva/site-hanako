@@ -2,8 +2,14 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --background-color: rgb(255, 255, 255);
+    --text-color: rgb(14, 1, 1)03;
+    --section-break-text: #160101;
+    --section-break-bg: rgb(255, 145, 0);
 }
 
 html,
@@ -16,10 +22,18 @@ body {
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
+    background-color: var(--background-color);
 }
 
 header {
     height: 18dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-family: 'Silkscreen';
 }
 
 section#start-section {
@@ -44,7 +58,7 @@ section#start-section button {
 
 div.section-break {
     height: 12dvh;
-    background-color: rgb(255, 145, 0);
+    background-color: var(--section-break-bg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,6 +67,8 @@ div.section-break {
 
 div.section-break span {
     font-size: 1.5rem;
+    font-family: 'Silkscreen';
+    color: var(--section-break-text);
 }
 
 /*---------------------sections*/
@@ -64,16 +80,16 @@ section {
 }
 
 section > div.display {
-    --space-between: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: var(--space-between);
+    padding: 2rem;
 }
 
 section > div.display > a {
     position: relative;
+    color: var(--text-color);
 }
 
 section > div.display > a div {
@@ -84,6 +100,7 @@ section > div.display > a div {
     justify-content: center;
     background-color: rgba(255, 248, 220, 0);
     transition: .3s;
+    padding: 1rem;
 
     &:hover {
         background-color: rgba(255, 248, 220, .7);
@@ -94,6 +111,8 @@ section > div.display > a div span {
     font-size: 1.3rem;
     opacity: 0;
     transition: .3s;
+    font-family: 'Silkscreen';
+    text-align: center;
 }
 
 section > div.display > a:hover div span {
@@ -110,6 +129,16 @@ section > div.container {
     align-items: center;
 }
 
+section > div.container p {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 10px;
+}
+
+section > div.container > img {
+    width: 80%;
+}
+
 /*topodesecoes*/
 
 div.section-top {
@@ -120,4 +149,8 @@ div.section-top hr {
     height: 5px;
     background-color: black;
     margin-bottom: 20px;
+}
+
+div.section-top h2 {
+    font-family: 'Silkscreen';
 }
