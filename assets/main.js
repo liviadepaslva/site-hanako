@@ -4,6 +4,19 @@ btToggleMenu.addEventListener("click", () => {
   document.body.classList.toggle("open-nav")
 })
 
+//dialog do trailer
+const btDialog = document.querySelector(".bt-dialog")
+const Trailerdialog = document.querySelector("dialog#trailer")
+
+btDialog.addEventListener('click', () => Trailerdialog.show())
+
+document.querySelectorAll("dialog button").forEach(
+  bt => bt.addEventListener("click", () => {
+    event.preventDefault()
+    Trailerdialog.close()
+  })
+)
+
 //modal de seleção de tema
 const Themedialog = document.querySelector("dialog#tema")
 const btModal = document.querySelector(".bt-modal")
@@ -12,16 +25,6 @@ const btModal = document.querySelector(".bt-modal")
 btModal.addEventListener('click', () => Themedialog.showModal())
 document.querySelectorAll("dialog button").forEach(
   bt => bt.addEventListener("click", () => Themedialog.close()
-  )
-)
-
-//dialog do trailer
-const btDialog = document.querySelector(".bt-dialog")
-const Trailerdialog = document.querySelector("dialog#trailer")
-
-btDialog.addEventListener('click', () => Trailerdialog.show())
-document.querySelectorAll("dialog button").forEach(
-  bt => bt.addEventListener("click", () => Trailerdialog.close()
   )
 )
 

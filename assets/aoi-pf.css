@@ -1,4 +1,3 @@
-/* cores uwu --✀------------------------------------------------------------ */
 @import url(profile.css);
 
 :root {
@@ -35,7 +34,6 @@ main {
     border: .8rem var(--background-color) solid;
 }
 
-
 main > div.container {
     background-color: var(--background-color);
 }
@@ -49,8 +47,6 @@ main > div.imagens > span {
     color: white;
     font-size: 1.5rem;
 }
-
-/*cor das seções --✀---------------------------*/
 
 div.container > section > .section-top h1 {
     color: var(--section-n1);

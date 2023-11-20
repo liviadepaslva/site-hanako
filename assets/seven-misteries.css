@@ -26,6 +26,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
+
+    overflow-x: hidden;
 }
 
 h1{
@@ -38,7 +40,7 @@ h1{
     padding: .7rem .6rem;
     box-shadow: 5px 3px 3px rgba(45, 7, 7, 0.3);
 }
-
+/* ------- painel ---------------✀----------------- */
 .seven-mysteries {
     display: flex;
     flex-direction: column;
@@ -93,6 +95,11 @@ h1{
         transform: translateY(2.5rem);
     }
 }
+.seven-
+mysteries .image-container a img {
+    width: 32vmin;
+    transition: .3s;
+}
 
 .seven-mysteries .image-container a span {
     margin-top: 3rem;
@@ -132,10 +139,8 @@ h1{
     color: rgb(183, 96, 200);
 }
 
-.seven-mysteries .image-container a img {
-    width: 32vmin;
-    transition: .3s;
-}
+
+/* ------- conteúdo ---------------✀----------------- */
 
 main {
     position: relative;
@@ -173,6 +178,10 @@ header > article {
     font-family: 'Silkscreen', 'Noto Sans JP', sans-serif;
     text-align: justify;
     color: var(--text-color);
+}
+.seven-mysteries .image-container a img {
+    width: 32vmin;
+    transition: .3s;
 }
 
 main > section {
@@ -212,4 +221,36 @@ main > section p {
     text-align: justify;
     padding: .5rem;
     font-family: 'Silkscreen';
+}
+
+footer {
+    margin-top: 2rem;
+    width: 100%;
+    height: 300px;
+    background-color: var(--section-break-bg);
+    box-shadow: 0px -5px 8px rgba(37, 1, 1, 0.499);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+/* ------- rodapé ---------------✀----------------- */
+
+footer * {
+    font-family: 'Silkscreen';
+}
+
+footer address {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin: 2rem;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+}
+
+footer img {
+    height: 200px;
 }

@@ -50,8 +50,6 @@ main > div.imagens > span {
     font-size: 1.5rem;
 }
 
-/*cor das seções --✀---------------------------*/
-
 div.container > section > .section-top h1 {
     color: var(--section-n1);
 }

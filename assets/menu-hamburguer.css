@@ -1,7 +1,16 @@
 :root {
-    --menu-width: 350px;
+    --menu-width: 400px;
 }
 
+/* -- ícones ---------------✀----------------- */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
 
 .menu-hamburger {
     --_size: 2.5rem;
@@ -10,7 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: calc(var(--_size) / 6);
+    padding: calc(var(--_size) / 5);
     cursor: pointer;
     transition: left .25s;
     position: fixed;
@@ -76,12 +85,12 @@
     z-index: 10;
 }
 
-.main-menu a {
+.main-menu a,
+.main-menu > span {
     display: block;
     font-family: 'Silkscreen';
     color: var(--text-color);
-    text-decoration: none;
-    background-color: var(--background-color);
+    text-decoration: none; 
     padding: .5rem;
     border: 3px solid var(--text-color);
     border-radius: 10px;
@@ -90,12 +99,21 @@
     align-items: center;
     gap: .5rem
 }
+
+.main-menu a {
+    background-color: var(--background-color);
+}
+
+.main-menu > span {
+    background-color: rgb(240, 69, 129);
+}
+
 .main-menu a:hover {
     background-color: var(--section-break-bg);
     transform: translateX(5%);
 }
 
-.main-menu a span {
+.main-menu a span:not(.material-symbols-outlined) {
     font-family: 'Silkscreen';
 }
 
